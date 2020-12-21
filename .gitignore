@@ -1,0 +1,5 @@
+# Project exclude paths
+/event-service-api/target/
+/event-service-dto/target/
+/event-service-impl/target/
+/event-service-rest/target/

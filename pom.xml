@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.epam.jgmp</groupId>
+    <artifactId>EventServiceRestApi</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>event-service-api</module>
+        <module>event-service-dto</module>
+        <module>event-service-impl</module>
+        <module>event-service-rest</module>
+    </modules>
+
+    <properties>
+        <h2.db.version>1.4.200</h2.db.version>
+
+        <spring.framework.version>5.2.12.RELEASE</spring.framework.version>
+        <spring.framework.boot.version>2.3.7.RELEASE</spring.framework.boot.version>
+
+        <springfox.swagger.version>3.0.0</springfox.swagger.version>
+
+        <xml.bind.version>2.3.1</xml.bind.version>
+
+        <maven.compiler.plugin.vesrion>3.8.1</maven.compiler.plugin.vesrion>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin.vesrion}</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                    <showWarnings>true</showWarnings>
+                    <showDeprecation>true</showDeprecation>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
